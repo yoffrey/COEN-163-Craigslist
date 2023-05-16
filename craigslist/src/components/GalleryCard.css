@@ -1,5 +1,12 @@
 .gallery-card-container {
     background-color: gray;
-    max-height: 400px;
+    height: 300px;
+    width: 300px;
+    margin: 10px;
+}
+
+img {
     max-width: 300px;
+    max-height: 200px;
+    align-items: center;
 }

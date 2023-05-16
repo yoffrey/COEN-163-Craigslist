@@ -1,33 +1,26 @@
 import React, {useState, useEffect} from "react";
-import categories from '../data/categories.json';
 import './SubCategory.css';
 import GalleryView from './GalleryView';
+import forSale from '../data/forsale.json';
 
 function SubCategory(category) {
-    const [subCategory, setSubCategory] = useState(categories['for sale']);
-
-    // Use useEffect to update the subcategory state when the category changes
-    useEffect(() => {
-        setSubCategory(categories[category.data]);
-    }, [category.data]);
-
     const [subCategorySelection, setSubCategorySelection] = useState('general')
 
     const handleClick = (subCategorySelection) => {
-        setSubCategorySelection(subCategorySelection)
+        setSubCategorySelection(subCategorySelection['item'])
     }
 
     return (
         <div className={'gallery-sub-category-container'}>
             <div className={'sub-category-container'}>
-                {subCategory?.map((item, index) => (
+                {category.data?.map((item, index) => (
                     <button className='gallery-sidebar-button'
                             key={index}
                             onClick={() => handleClick({item})}>{item}</button>
                 ))}
             </div>
-            <div>
-                <GalleryView data={subCategorySelection} />
+            <div className={'gallery-view-container'}>
+                <GalleryView data={forSale[subCategorySelection]} />
             </div>
         </div>
     );

@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from "react";
-import {Link} from "react-router-dom";
 import './MainCategory.css';
 import SubCategory from "./SubCategory";
+import categories from '../data/categories.json';
 
 function MainCategory() {
     const [category, setCategory] = useState('for sale')
@@ -27,7 +27,7 @@ function MainCategory() {
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
             <div>
-                <SubCategory data={category} />
+                <SubCategory data={categories[category]} />
             </div>
         </div>
 

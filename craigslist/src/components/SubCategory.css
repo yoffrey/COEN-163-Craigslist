@@ -18,3 +18,17 @@
     flex-direction: row;
 }
 
+.gallery-view-container {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 20px;
+    justify-content: flex-start;
+    overflow-y: auto;
+    background-color: #D9D9D9;
+    border-radius: 40px;
+    height: 70vh;
+    width: 200px;
+    margin: 20px
+}
