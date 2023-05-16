@@ -2,7 +2,6 @@ import React, {useState, useEffect} from "react";
 import {Link} from "react-router-dom";
 import './MainCategory.css';
 import SubCategory from "./SubCategory";
-import GalleryView from "./GalleryView";
 
 function MainCategory() {
     const [category, setCategory] = useState('for sale')
