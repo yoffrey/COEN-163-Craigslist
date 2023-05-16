@@ -1,9 +1,11 @@
 import React from 'react';
+import MainCategory from "../components/MainCategory";
+import SubCategory from "../components/SubCategory";
 
 function Home(){
     return (
       <div>
-          hi
+          <MainCategory />
       </div>
     );
 }

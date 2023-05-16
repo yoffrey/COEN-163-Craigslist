@@ -1,0 +1,5 @@
+.gallery-card-container {
+    background-color: gray;
+    max-height: 400px;
+    max-width: 300px;
+}

@@ -1,0 +1,37 @@
+.main-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 1000px) {
+    .main-category-container {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.main-category-button:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #999999;
+}
+
+.main-category-button,
+.main-category-button:visited,
+.main-category-button:focus {
+    border: none;
+    background-color: transparent;
+    margin-right: 15px;
+    margin-left: 15px;
+    color: black;
+    transition-duration: 0.2s;
+    text-align: center;
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: bolder;
+}
+

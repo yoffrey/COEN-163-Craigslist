@@ -12,12 +12,12 @@ function Navbar() {
     }
 
     return (
-        <div className='container'>
+        <div className='navbar-container'>
             <a href={'/'}><img className='logo' src={logo} alt="logo"/></a>
-            <input type={'text'} placeholder={'Search here'} onChange={handleChange} value={searchInput} />
+            <input className={'search-input'} type={'text'} placeholder={'Search here'} onChange={handleChange} value={searchInput} />
             <div>
-                <button className='button'><Link to={"/cart"}></Link>Cart</button>
-                <button className='button'><Link to={"/login"}></Link>Login</button>
+                <button className='navbar-button'><Link to={"/cart"}></Link>Cart</button>
+                <button className='navbar-button'><Link to={"/login"}></Link>Login</button>
             </div>
         </div>
     );

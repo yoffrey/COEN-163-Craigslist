@@ -1,4 +1,4 @@
-.container {
+.navbar-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -9,8 +9,8 @@
     max-width: 200px;
 }
 
-input,
-input:focus {
+.search-input,
+.search-input:focus {
     background-image: url('../images/search.png');
     background-position: 10px 10px;
     background-repeat: no-repeat;
@@ -23,14 +23,14 @@ input:focus {
 }
 
 @media only screen and (min-width: 1000px) {
-    .container {
+    .navbar-container {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
     }
 
-    input,
-    input:focus {
+    .search-input,
+    .search-input:focus {
         background-image: url('../images/search.png');
         background-position: 10px 10px;
         background-repeat: no-repeat;
@@ -45,16 +45,17 @@ input:focus {
 
 
 
-.button:hover {
+.navbar-button:hover {
     background-color: #D5B5E8;
     text-decoration: none;
     color: #784c92;
 }
 
-.button,
-.button:visited,
-.button:focus {
-    margin-right: 10px;
+.navbar-button,
+.navbar-button:visited,
+.navbar-button:focus {
+    margin-right: 5px;
+    margin-left: 5px;
     background-color: #784c92;
     color: white;
     transition-duration: 0.2s;

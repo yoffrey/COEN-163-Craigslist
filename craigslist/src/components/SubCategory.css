@@ -1,0 +1,20 @@
+.sub-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    overflow-y: auto;
+    background-color: #D9D9D9;
+    border-radius: 40px;
+    height: 70vh;
+    width: 200px;
+    margin: 20px
+}
+
+.gallery-sub-category-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
