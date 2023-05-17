@@ -4,17 +4,9 @@ import logo from "../images/logo.png";
 import './Navbar.css';
 
 function Navbar() {
-    const [searchInput, setSearchInput] = useState("");
-
-    const handleChange = (e) => {
-        e.preventDefault();
-        setSearchInput(e.target.value);
-    }
-
     return (
         <div className='navbar-container'>
             <a href={'/'}><img className='logo' src={logo} alt="logo"/></a>
-            <input className={'search-input'} type={'text'} placeholder={'Search here'} onChange={handleChange} value={searchInput} />
             <div>
                 <button className='navbar-button'><Link to={"/cart"}></Link>Cart</button>
                 <button className='navbar-button'><Link to={"/login"}></Link>Login</button>

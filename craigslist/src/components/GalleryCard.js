@@ -3,9 +3,12 @@ import './GalleryCard.css';
 function GalleryCard({name, price, image}) {
     return (
         <div className={'gallery-card-container'}>
-            <img className={'gallery-card-image-container'} src={image} alt={name} />
-            <h4>{name}</h4>
-            <h5>{price}</h5>
+            <div className={'image-wrapper'}>
+                <img className={'gallery-card-image-container'} src={image} alt={name} />
+            </div>
+
+            <div className={'card-product-name'}>{name}</div>
+            <div className={'card-product-price'}>{price}</div>
         </div>
     );
 }

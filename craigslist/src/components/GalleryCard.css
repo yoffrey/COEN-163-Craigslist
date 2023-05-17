@@ -1,17 +1,44 @@
 .gallery-card-container {
-    display: flex;
     background-color: gray;
-    flex-direction: column;
     height: 250px;
     width: 250px;
     margin: 10px;
-    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.image-wrapper {
+    display: flex;
     justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 180px;
+    top: 0;
+    left: 0;
+    overflow: hidden;
 }
 
 .gallery-card-image-container {
     max-width: 100%;
-    max-height: 50%;
+    max-height: 100%;
     width: auto;
     height: auto;
+}
+
+.card-product-name {
+    position: absolute;
+    width: 100%;
+    top: 180px;
+    left: 0;
+    height: 35px;
+    overflow: hidden;
+}
+
+.card-product-price {
+    position: absolute;
+    width: 100%;
+    top: 215px;
+    left: 0;
+    height: 35px;
+    overflow: hidden;
 }
