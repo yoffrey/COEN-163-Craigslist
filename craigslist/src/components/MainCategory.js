@@ -27,6 +27,9 @@ function MainCategory() {
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
             <div>
+                Hi
+            </div>
+            <div>
                 <SubCategory data={categories[category]} />
             </div>
         </div>

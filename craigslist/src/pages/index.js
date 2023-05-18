@@ -16,11 +16,13 @@ function Home(){
         setSearchInput(e.target.value);
     }
     return (
-        <div className={'search-browse-container'}>
+        <div>
             <div className={`search-bar-container ${showBrowse ? 'visible-search' : ''}`}>
                 <input className={'search-input'} type={'text'} placeholder={'Search here'} onChange={handleChange} value={searchInput} />
             </div>
-            {showBrowseButton ? <button onClick={onClick}>Browse</button>: null}
+            <div>
+                {showBrowseButton ? <button className={'browse-button'} onClick={onClick}>Browse</button>: null}
+            </div>
             <div className={`browse-container ${showBrowse ? 'visible-browse' : ''}`}>
                 {showBrowse && <MainCategory />}
             </div>
