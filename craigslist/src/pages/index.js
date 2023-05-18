@@ -17,7 +17,7 @@ function Home(){
     return (
         <div className={'page-area'}>
             <div className={`hidden-search-bar-container ${showBrowse ? 'visible-search' : ''}`}>
-                <input className={'search-input'} type={'text'} placeholder={'Search here'} onChange={handleChange} value={searchInput} />
+                <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} value={searchInput} />
                 <div>
                     {showBrowseButton ? <button className={'browse-button'} onClick={onClick}>Browse</button>: null}
                 </div>

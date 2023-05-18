@@ -53,7 +53,7 @@
     .visible-browse {
         opacity: 1;
         width: 75%;
-        height: 90%;    
+        height: 90%;
         transform: translate(-50%, 0%);
     }
 }
