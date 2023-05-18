@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import MainCategory from "../components/MainCategory";
+import './index.css';
 
 function Home(){
     const [searchInput, setSearchInput] = useState("");
