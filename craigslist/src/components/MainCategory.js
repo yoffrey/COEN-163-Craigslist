@@ -11,7 +11,7 @@ function MainCategory() {
     }
 
     return (
-        <div>
+        <>
             <div className={'main-category-container'}>
                 <button className='main-category-button'
                         onClick={() => handleClick('community')}>Community</button>
@@ -26,14 +26,8 @@ function MainCategory() {
                 <button className='main-category-button'
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
-            <div>
-                Hi
-            </div>
-            <div>
                 <SubCategory data={categories[category]} />
-            </div>
-        </div>
-
+        </>
     );
 
 }
