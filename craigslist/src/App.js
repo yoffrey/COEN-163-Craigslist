@@ -6,14 +6,13 @@ import Home from './pages';
 import { BrowserRouter as Router, Routes, Route}
   from 'react-router-dom';
 
-
 function App() {
   return (
       <Router>
-          <Navbar/>
-        <Routes>
-          <Route exact path='/' element={<Home />}/>
-        </Routes>
+          <Navbar />
+          <Routes className={'page-area'}>
+              <Route exact path='/' element={<Home />}/>
+          </Routes>
       </Router>
   );
 }

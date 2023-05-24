@@ -3,25 +3,27 @@ import MainCategory from "../components/MainCategory";
 import './index.css';
 
 function Home(){
-    const [searchInput, setSearchInput] = useState("");
     const [showBrowse, setShowBrowse] = useState(false);
     const [showBrowseButton, setShowBrowseButton] = useState(true);
-    const onClick = () => {
+    const [showUpload, setShowUpload] = useState(false);
+    const [showUploadButton, setShowUploadButton] = useState(true);
+    const onClickBrowse = () => {
         setShowBrowse(true);
         setShowBrowseButton(false);
+        setShowUploadButton(false);
     }
 
-    const handleChange = (e) => {
-        e.preventDefault();
-        setSearchInput(e.target.value);
+    const onClickUpload = () => {
+        setShowUpload(true);
+        setShowBrowseButton(false);
+        setShowUploadButton(false);
     }
+
     return (
-        <div className={'page-area'}>
-            <div className={`hidden-search-bar-container ${showBrowse ? 'visible-search' : ''}`}>
-                <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} value={searchInput} />
-                <div>
-                    {showBrowseButton ? <button className={'browse-button'} onClick={onClick}>Browse</button>: null}
-                </div>
+        <div>
+            <div className={'home-button-container'}>
+                {showBrowseButton ? <button className={'browse-button'} onClick={onClickBrowse}>Browse</button>: null}
+                {showUploadButton ? <button className={'browse-button'} onClick={onClickUpload}>Upload</button>: null}
             </div>
             <div className={`hidden-browse-container ${showBrowse ? 'visible-browse' : ''}`}>
                 {<MainCategory />}

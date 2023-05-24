@@ -50,3 +50,15 @@
     font-size: 16px;
 }
 
+.hidden-login-container {
+    position: fixed;
+    opacity: 0;
+    top: 50vh;
+    left: 50vw;
+}
+
+.visible-login {
+    opacity: 1;
+    top: 50vh;
+    left: 50vh;
+}
