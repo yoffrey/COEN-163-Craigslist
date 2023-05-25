@@ -53,6 +53,24 @@
         height: 90%;
         transform: translate(-50%, 0%);
     }
+
+    .hidden-map-container {
+        position: relative;
+        bottom: -100%; /* Initially off-screen */
+        left: 50%;
+        opacity: 0;
+        transform: translate(-50%, 100%);
+        transition: opacity 0.3s, transform 0.3s ease, bottom 0.3s;
+        width: 90%;
+        height: 90%;
+    }
+
+    .visible-map {
+        opacity: 1;
+        width: 100%;
+        height: 90%;
+        transform: translate(-50%, 0%);
+    }
 }
 
 .browse-button:hover {
