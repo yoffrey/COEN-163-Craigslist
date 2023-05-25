@@ -34,6 +34,7 @@ function Home(){
         <>
             <div className={'home-button-container'}>
                 {showBrowseButton ? <button className={'browse-button'} onClick={onClickBrowse}>Browse</button>: null}
+                {showMapButton ? <button className={'browse-button'} onClick={onClickMap}>Map</button>: null}
                 {showUploadButton ? <button className={'browse-button'} onClick={onClickUpload}>Upload</button>: null}
             </div>
             <div className={`hidden-browse-container ${showBrowse ? 'visible-browse' : ''}`}>
