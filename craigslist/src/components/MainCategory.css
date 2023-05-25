@@ -37,3 +37,18 @@
     font-weight: bolder;
 }
 
+.gallery-sub-category-container {
+    display: flex;
+    align-items: stretch;
+    align-content: stretch;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 71px);
+}
+
+.filter-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}

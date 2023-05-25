@@ -79,7 +79,8 @@
 
 .browse-button,
 .browse-button:visited,
-.browse-button:focus {
+.browse-button:focus,
+.browse-button:active {
     background-color: #784c92;
     color: white;
     transition-duration: 0.2s;

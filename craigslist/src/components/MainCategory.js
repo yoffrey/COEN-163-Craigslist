@@ -6,6 +6,18 @@ import categories from '../data/categories.json';
 
 function MainCategory() {
     const [category, setCategory] = useState('for sale')
+    const [showMap, setShowMap] = useState(false);
+    const [mapBrowseText, setMapBrowseText] = useState('Map');
+
+    const onClickMap = () => {
+        setShowMap(!showMap);
+        if (showMap) {
+            setMapBrowseText('Browse')
+        }
+        else {
+            setMapBrowseText('Map')
+        }
+    }
 
     const handleClick = (category) => {
         setCategory(category)
@@ -27,8 +39,13 @@ function MainCategory() {
                 <button className='main-category-button'
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
-            <SearchFilter />
-            <SubCategory data={categories[category]} />
+            <div className={'filter-container'}>
+                <button className={'browse-button'} onClick={onClickMap}>{mapBrowseText}</button>
+                <SearchFilter />
+            </div>
+            <div className={'gallery-sub-category-container'}>
+                <SubCategory data={categories[category]} />
+            </div>
         </>
     );
 

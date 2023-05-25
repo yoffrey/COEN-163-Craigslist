@@ -11,7 +11,7 @@ function SubCategory(category) {
     }
 
     return (
-        <div className={'gallery-sub-category-container'}>
+        <>
             <div className={'sub-category-container'}>
                 {category.data?.map((item, index) => (
                     <button className='gallery-sidebar-button'
@@ -20,7 +20,7 @@ function SubCategory(category) {
                 ))}
             </div>
                 <GalleryView data={forSale[subCategorySelection]} />
-        </div>
+        </>
     );
 }
 
