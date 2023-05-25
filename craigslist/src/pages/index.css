@@ -1,41 +1,22 @@
-
-.hidden-search-bar-container {
-    position: absolute;
-    width: 80%;
-    max-width: 600px;
-    min-width: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: top 0.3s ease;
-}
-
-.visible-search {
-    top: 145px;
-}
-
 .hidden-browse-container {
     position: relative;
-    bottom: 5vh; /* Initially off-screen */
     left: 50%;
     transform: translate(-50%, 100%);
     transition: opacity 0.3s, transform 0.3s ease, bottom 0.3s;
     opacity: 0;
     width: 100%;
-    height: 100%;
 }
 
 .visible-browse {
+    flex-grow: 1;
     opacity: 1;
-    top: 40px;
     width: 100%;
-    height: 100%;
+    height: calc(100% - 165px);
     transform: translate(-50%, 0%);
 }
 
 .hidden-map-container {
     position: relative;
-    bottom: 5vh; /* Initially off-screen */
     left: 50%;
     transform: translate(-50%, 100%);
     transition: opacity 0.3s, transform 0.3s ease, bottom 0.3s;
@@ -57,7 +38,6 @@
 
     .hidden-browse-container {
         position: relative;
-        bottom: 5vh; /* Initially off-screen */
         left: 50%;
         opacity: 0;
         transform: translate(-50%, 100%);
@@ -65,15 +45,15 @@
     }
 
     .visible-browse {
+        flex-grow: 1;
         opacity: 1;
         width: 100%;
-        height: calc(100% - 56px);
-        transform: translate(-50%, -5%);
+        height: calc(100vh - 56px);
+        transform: translate(-50%, 0%);
     }
 
     .hidden-map-container {
         position: relative;
-        bottom: 5vh; /* Initially off-screen */
         left: 50%;
         opacity: 0;
         transform: translate(-50%, 100%);

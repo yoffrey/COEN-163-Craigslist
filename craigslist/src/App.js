@@ -8,12 +8,10 @@ import { BrowserRouter as Router, Routes, Route}
 function App() {
   return (
       <Router>
-          <div className={'body'}>
               <Navbar />
               <Routes>
                   <Route exact path='/' element={<Home />}/>
               </Routes>
-          </div>
       </Router>
   );
 }

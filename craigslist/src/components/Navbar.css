@@ -2,11 +2,10 @@
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+    align-items: center;
     flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 10px;
+    gap: 5px;
 }
 
 .logo {
@@ -24,7 +23,25 @@
     }
 }
 
-
+.search-input,
+.search-input:focus {
+    outline: none !important;
+    background-image: url('../images/search.png');
+    background-size: 20px;
+    background-position: 15px 15px;
+    background-repeat: no-repeat;
+    padding-left: 50px;
+    width: 80%;
+    min-width: 300px;
+    max-width: 500px;
+    border: 2px solid #784c92;
+    border-radius: 25px;
+    display: flex;
+    z-index: 3;
+    box-shadow: none;
+    margin: 0 auto;
+    height: 50px
+}
 
 .navbar-button:hover {
     background-color: #D5B5E8;
