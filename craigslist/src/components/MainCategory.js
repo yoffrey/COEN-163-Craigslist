@@ -1,5 +1,6 @@
 import React, {useState, useEffect} from "react";
 import './MainCategory.css';
+import SearchFilter from "./SearchFilter";
 import SubCategory from "./SubCategory";
 import categories from '../data/categories.json';
 
@@ -26,7 +27,8 @@ function MainCategory() {
                 <button className='main-category-button'
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
-                <SubCategory data={categories[category]} />
+            <SearchFilter />
+            <SubCategory data={categories[category]} />
         </>
     );
 
