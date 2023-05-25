@@ -19,9 +19,7 @@ function SubCategory(category) {
                             onClick={() => handleClick({item})}>{item}</button>
                 ))}
             </div>
-            <div className={'gallery-view-container'}>
                 <GalleryView data={forSale[subCategorySelection]} />
-            </div>
         </div>
     );
 }

@@ -1,8 +1,20 @@
 * {
     font-family: 'Yaldevi Colombo', sans-serif;
-    overflow: hidden;
 }
 
+body {
+    height: 100vh; /* Set body height to 100% of viewport height */
+    width: 100vw; /* Set body width to 100% of viewport width */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root {
+    height: 100%;
+    width: 100%;
+}
 
 .search-input,
 .search-input:focus {
@@ -30,4 +42,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.remaining-page {
+    height: 100%;
+    width: 100%;
 }

@@ -5,6 +5,7 @@
     margin: 10px;
     overflow: hidden;
     position: relative;
+    border-radius: 30px;
 }
 
 .image-wrapper {

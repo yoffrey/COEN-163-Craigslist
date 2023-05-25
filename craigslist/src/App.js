@@ -1,6 +1,5 @@
 import './App.css';
 import React from "react";
-import {Link} from "react-router-dom";
 import Navbar from "./components/Navbar.js";
 import Home from './pages';
 import { BrowserRouter as Router, Routes, Route}
@@ -9,10 +8,12 @@ import { BrowserRouter as Router, Routes, Route}
 function App() {
   return (
       <Router>
-          <Navbar />
-          <Routes className={'page-area'}>
-              <Route exact path='/' element={<Home />}/>
-          </Routes>
+          <div className={'body'}>
+              <Navbar />
+              <Routes>
+                  <Route exact path='/' element={<Home />}/>
+              </Routes>
+          </div>
       </Router>
   );
 }
