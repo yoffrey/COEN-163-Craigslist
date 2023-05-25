@@ -20,13 +20,14 @@ function Home(){
         setShowUpload(true);
         setShowBrowseButton(false);
         setShowUploadButton(false);
+        setShowMapButton(false);
     }
 
     const onClickMap = () => {
-        setShowUpload(false);
+        setShowMap(true);
         setShowBrowseButton(false);
         setShowUploadButton(false);
-        setShowMapButton(true);
+        setShowMapButton(false);
     }
 
     return (
@@ -36,13 +37,11 @@ function Home(){
                 {showMapButton ? <button className={'browse-button'} onClick={onClickMap}>View Map</button>: null}
                 {showUploadButton ? <button className={'browse-button'} onClick={onClickUpload}>Upload</button>: null}
             </div>
-            <div>
             <div className={`hidden-browse-container ${showBrowse ? 'visible-browse' : ''}`}>
                 {<MainCategory />}
             </div>
-            <div className={`hidden-browse-container ${showBrowse ? 'visible-map' : ''}`}>
+            <div className={`hidden-map-container ${showMap ? 'visible-map' : ''}`}>
                 {<MainMap />}
-            </div>
             </div>
         </div>
     );

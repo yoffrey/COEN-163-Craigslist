@@ -11,20 +11,7 @@ function MainMap() {
 
     return (
         <>
-            <div className={'main-category-container'}>
-                <button className='main-category-button'
-                        onClick={() => handleClick('community')}>Community</button>
-                <button className='main-category-button'
-                        onClick={() => handleClick('services')}>Services</button>
-                <button className='main-category-button'
-                        onClick={() => handleClick('housing')}>Housing</button>
-                <button className='main-category-button'
-                        onClick={() => handleClick('for sale')}>For Sale</button>
-                <button className='main-category-button'
-                        onClick={() => handleClick('jobs')}>Jobs</button>
-                <button className='main-category-button'
-                        onClick={() => handleClick('gigs')}>Gigs</button>
-            </div>
+            <div>hi</div>
         </>
     );
 
