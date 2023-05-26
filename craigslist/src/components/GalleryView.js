@@ -9,7 +9,7 @@ function GalleryView(subCategorySelection) {
     }
 
     return (
-        <div className={'gallery-view-container'}>
+        <>
             {subCategorySelection.data &&
                 Object.entries(subCategorySelection.data)?.map( ([key, value]) => (
                 <GalleryCard
@@ -19,7 +19,7 @@ function GalleryView(subCategorySelection) {
                     image={value.image}
                 />
             ))}
-        </div>
+        </>
     );
 }
 

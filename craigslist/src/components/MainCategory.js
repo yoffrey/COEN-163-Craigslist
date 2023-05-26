@@ -8,20 +8,20 @@ function MainCategory() {
     const [category, setCategory] = useState('for sale')
     const [showMap, setShowMap] = useState(false);
     const [mapBrowseText, setMapBrowseText] = useState('Map');
-
-    const onClickMap = () => {
+    const toggleMapBrowse = () => {
         setShowMap(!showMap);
         if (showMap) {
-            setMapBrowseText('Browse')
+            setMapBrowseText('Map')
         }
         else {
-            setMapBrowseText('Map')
+            setMapBrowseText('Browse')
         }
     }
 
     const handleClick = (category) => {
         setCategory(category)
     }
+
 
     return (
         <>
@@ -40,11 +40,13 @@ function MainCategory() {
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
             <div className={'filter-container'}>
-                <button className={'browse-button'} onClick={onClickMap}>{mapBrowseText}</button>
+                <button className={'browse-button'}
+                        onClick={toggleMapBrowse}
+                >{mapBrowseText}</button>
                 <SearchFilter />
             </div>
             <div className={'gallery-sub-category-container'}>
-                <SubCategory data={categories[category]} />
+                <SubCategory category={categories[category]} mapBool={showMap} />
             </div>
         </>
     );

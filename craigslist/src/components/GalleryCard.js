@@ -1,6 +1,6 @@
 import './GalleryCard.css';
 
-function GalleryCard({name, price, image}) {
+function GalleryCard({key, name, price, image}) {
     return (
         <div className={'gallery-card-container'}>
             <div className={'image-wrapper'}>

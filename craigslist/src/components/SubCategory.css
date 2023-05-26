@@ -3,13 +3,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    align-content: center;
     overflow-y: auto;
     background-color: #D9D9D9;
     border-radius: 40px;
-    width: 200px;
+    min-width: 220px;
+    width: 220px;
     margin: 10px;
     height: calc(100% - 71px);
+    transition: opacity 0.3s ease-out, left 0.7s ease-out;
+}
+
+.shift-sub-category-container {
+    position: relative;
+    opacity: 0;
+    left: -50vw;
 }
 
 .gallery-view-container {
@@ -21,8 +28,47 @@
     background-color: #D9D9D9;
     border-radius: 40px;
     height: calc(100% - 71px);
+    flex-grow: 1;
     width: 100%;
-    margin: 10px
+    margin: 10px;
+    left: 0;
+    transition: left 0.3s ease-out, width 0.3s ease-out;
+}
+
+.shift-gallery-view {
+    flex-grow: 0;
+    position: relative;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-start;
+    min-width: 220px;
+    width: 220px;
+    margin: 10px;
+    height: calc(100% - 71px);
+    left: 0px;
+}
+
+.hidden-map-container {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    background-color: #D9D9D9;
+    width: calc(100% + 240px);
+    border-radius: 40px;
+    height: calc(100% - 71px);
+    right: -100vw;
+    opacity: 0;
+    transition: right 0.3s ease-out, width 0.3s ease-out;
+}
+
+.visible-map {
+    position: relative;
+    opacity: 1;
+    margin: 10px;
+    right: 0px;
 }
 
 .gallery-sidebar-button:hover {
@@ -34,14 +80,16 @@
 .gallery-sidebar-button,
 .gallery-sidebar-button:visited,
 .gallery-sidebar-button:focus {
-    width: 100%;
     border: none;
     background-color: transparent;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 5px;
+    margin-left: 5px;
     color: black;
     transition-duration: 0.2s;
     text-align: center;
     text-decoration: none;
     font-size: 14px;
 }
+
+
+

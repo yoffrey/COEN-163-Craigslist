@@ -1,7 +1,6 @@
 import React, {useState} from 'react';
 import MainCategory from "../components/MainCategory";
 import './index.css';
-import MainMap from '../components/MainMap';
 
 function Home(){
     const [showBrowse, setShowBrowse] = useState(false);

@@ -3,15 +3,10 @@ import './MainCategory.css';
 import SubMap from "./SubMap";
 
 function MainMap() {
-    const [category, setMap] = useState('for sale')
-
-    const handleClick = (category) => {
-        setMap(category)
-    }
 
     return (
         <>
-            <div>hi</div>
+            <div>hi test main map</div>
         </>
     );
 
