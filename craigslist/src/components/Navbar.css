@@ -43,12 +43,6 @@
     height: 50px
 }
 
-.navbar-button:hover {
-    background-color: #D5B5E8;
-    text-decoration: none;
-    color: #784c92;
-}
-
 .navbar-button,
 .navbar-button:visited,
 .navbar-button:focus {
@@ -64,6 +58,13 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+}
+
+
+.navbar-button:hover {
+    background-color: #D5B5E8;
+    text-decoration: none;
+    color: #784c92;
 }
 
 .hidden-login-container {
