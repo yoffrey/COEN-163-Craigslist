@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from "react";
 import './MainCategory.css';
-import SubMap from "./SubMap";
 import { MapContainer, TileLayer, Marker, Popup, Tooltip } from "react-leaflet" 
 import 'leaflet/dist/leaflet.css';
-import {Icon} from "leaflet"
-
+import {Icon} from "leaflet";
 
 function MainMap() {
     const position = [37.3494, -121.9381];
