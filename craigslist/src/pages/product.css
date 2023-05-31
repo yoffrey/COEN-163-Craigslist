@@ -1,8 +1,9 @@
 .product-container {
     display: flex;
-    justify-content: left;
-    align-items: left;
-    height: 100vh;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100% - 165px);
 }
 
 .image-container {

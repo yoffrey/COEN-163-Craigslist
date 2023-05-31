@@ -12,8 +12,11 @@ const Product = ()  => {
         if (imageChoice === bike) {
             setImageChoice(back);
         }
-        else {
-            setImageChoice(front)
+        if (imageChoice === front) {
+            setImageChoice(bike);
+        }
+        if (imageChoice === back) {
+            setImageChoice(front);
         }
     }
 
@@ -21,8 +24,11 @@ const Product = ()  => {
         if (imageChoice === bike) {
             setImageChoice(front);
         }
-        else {
-            setImageChoice(back)
+        if (imageChoice === front) {
+            setImageChoice(back);
+        }
+        if (imageChoice === back) {
+            setImageChoice(bike);
         }
     }
 
@@ -32,6 +38,9 @@ const Product = ()  => {
                 <img src={imageChoice} alt="Product Image" />
                     <button id="prev-button" className="nav-button" onClick={handlePrevious}>Previous</button>
                     <button id="next-button" className="nav-button" onClick={handleNext}>Next</button>
+            </div>
+            <div>
+                DESCRIPTION
             </div>
         </div>
     );
