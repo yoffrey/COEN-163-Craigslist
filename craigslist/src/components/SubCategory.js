@@ -6,7 +6,6 @@ import MainMap from './MainMap';
 import MainCategory from "./MainCategory";
 
 function SubCategory({category, mapBool}) {
-    console.log(category, mapBool);
     const [subCategorySelection, setSubCategorySelection] = useState('general')
     const [showMap, setShowMap] = useState(false);
 

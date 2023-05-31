@@ -67,8 +67,3 @@
     left: calc(50% - 115px);
     flex-grow: 1;
 }
-
-.remaining-page {
-    height: 100%;
-    width: 100%;
-}

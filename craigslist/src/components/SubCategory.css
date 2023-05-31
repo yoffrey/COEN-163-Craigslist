@@ -65,7 +65,6 @@
 }
 
 .visible-map {
-    z-index: -1;
     position: relative;
     opacity: 1;
     margin: 10px;

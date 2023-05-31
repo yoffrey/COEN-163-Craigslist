@@ -40,10 +40,10 @@ function MainCategory() {
                         onClick={() => handleClick('gigs')}>Gigs</button>
             </div>
             <div className={'filter-container'}>
-                <button className={'browse-button'}
-                        onClick={toggleMapBrowse}
-                >{mapBrowseText}</button>
                 <SearchFilter />
+                <button className={'browse-button'} onClick={toggleMapBrowse}>
+                    {mapBrowseText}
+                </button>
             </div>
             <div className={'gallery-sub-category-container'}>
                 <SubCategory category={categories[category]} mapBool={showMap} />
