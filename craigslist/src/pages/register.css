@@ -1,39 +1,63 @@
-.register-box {
-    background-color: #FAFAFA;
-    width: 400px;
-    padding: 20px;
-    margin: 0 auto;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .row {
-    margin-bottom: 20px;
-  }
-  
-  label {
-    display: inline-block;
-    width: 100px;
-    font-weight: bold;
-  }
-  
-  input[type="text"],
-  input[type="email"],
-  input[type="password"] {
-    width: 250px;
-    padding: 5px;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  button[type="submit"] {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  button[type="submit"]:hover {
-    background-color: #45a049;
-  }
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: radial-gradient(#d5b5e8, #ffffff);
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fafafa;
+  padding: 40px;
+  border-radius: 8px;
+  margin: 0 auto;
+  width: 800px;
+  text-align: center;
+}
+
+h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 37px;
+  margin-bottom: 20px;
+}
+
+.input-wrapper {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-wrapper label {
+  display: block;
+  margin-bottom: 5px;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  text-align: left;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-button {
+  background-color: #d5b5e8;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.register-button:hover {
+  background-color: #784c92;
+}
