@@ -1,8 +1,12 @@
-.login-container {
-    background-color: gray;
-    height: 250px;
-    width: 250px;
-    margin: 10px;
-    overflow: hidden;
+.show {
+    display: block;
+    background-color:#784c92;
+    transition: 800ms;
+    opacity:1;
+    z-index: auto;
 }
 
+.show.active {
+    transform: translateY(100px) scale(0) rotateY(180deg);
+    opacity:0;
+}
