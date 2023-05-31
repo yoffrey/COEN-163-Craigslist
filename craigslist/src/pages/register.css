@@ -40,14 +40,15 @@ h1 {
   text-align: left;
 }
 
-input {
-  width: 100%;
-  padding: 8px;
-  font-size: 16px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
+/*Please change this to a different className so it doesnt affect all inputs*/
+/*input {*/
+/*  width: 100%;*/
+/*  padding: 8px;*/
+/*  font-size: 16px;*/
+/*  border-radius: 8px;*/
+/*  border: 1px solid #ccc;*/
+/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
+/*}*/
 
 .register-button {
   background-color: #d5b5e8;
