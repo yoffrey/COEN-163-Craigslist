@@ -69,9 +69,10 @@
 
 .hidden-login-container {
     position: fixed;
-    opacity: 0;
-    top: 50vh;
-    left: 50vw;
+    opacity: 1;
+    left: 200vw;
+    top: 200vh;
+    z-index: 2;
 }
 
 .visible-login {
