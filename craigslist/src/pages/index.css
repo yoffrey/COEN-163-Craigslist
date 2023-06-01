@@ -42,7 +42,8 @@
     color: white;
     transition-duration: 0.2s;
     border-radius: 12px;
-    padding: 12px 28px;
+    height: 38px;
+    width: 100px;
     border: none;
     text-align: center;
     text-decoration: none;
