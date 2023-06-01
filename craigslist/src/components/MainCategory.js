@@ -22,7 +22,6 @@ function MainCategory() {
         setCategory(category)
     }
 
-
     return (
         <>
             <div className={'main-category-container'}>
