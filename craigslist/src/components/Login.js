@@ -4,11 +4,15 @@ import "./Login.css"
 
 
 const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
-
-    const handleLogin = () => {
+    const handleLogin = (event) => {
+        event.preventDefault();
         setLoggedIn("Settings");
-        setShowLogin(false);
         setIsLoggedIn(true);
+        setShowLogin(false);
+    }
+
+    const handleRegister = () => {
+        setShowLogin(false);
     }
 
 
@@ -29,9 +33,9 @@ const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
                             type="password"
                             name="password"
                             className="login-box"/> <br></br> <br></br>
-                        <input type="submit" value="LOGIN" className="login-btn"/>
-                        <Link to={'/register'} onClick={handleLogin}>
-                            <input type="submit" value="REGISTER" className="register-btn"/>
+                        <button onClick={handleLogin} className="login-btn">Login</button>
+                        <Link to={'/register'} onClick={handleRegister}>
+                            <button className="register-btn">Register</button>
                         </Link>
                     </form>
                 </div>
