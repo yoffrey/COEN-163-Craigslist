@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import MainCategory from "../components/MainCategory";
 import './index.css';
 
-function Home(){
-    const [showBrowse, setShowBrowse] = useState(false);
+function Home({setShowBrowse}){
     const [showBrowseButton, setShowBrowseButton] = useState(true);
-    const [showUpload, setShowUpload] = useState(false);
     const [showUploadButton, setShowUploadButton] = useState(true);
+    const [localShowBrowse, setLocalShowBrowse] = useState(setShowBrowse);
+
 
     const onClickBrowse = () => {
-        setShowBrowse(true);
+        setLocalShowBrowse(true);
         setShowBrowseButton(false);
         setShowUploadButton(false);
     }
@@ -23,7 +23,7 @@ function Home(){
                     <button className={'browse-button'}>Upload</button>
                 </Link>: null}
             </div>
-            <div className={`hidden-browse-container ${showBrowse ? 'visible-browse' : ''}`}>
+            <div className={`hidden-browse-container ${setShowBrowse || localShowBrowse ? 'visible-browse' : ''}`}>
                 {<MainCategory />}
             </div>
         </>

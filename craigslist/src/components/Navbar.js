@@ -5,7 +5,7 @@ import './Navbar.css';
 import Login from "./Login";
 import MainCategory from "./MainCategory";
 
-function Navbar(showBrowse) {
+function Navbar({setShowBrowse}) {
     const [searchInput, setSearchInput] = useState("");
     const [showLogin, setShowLogin] = useState(false);
     const [loggedIn, setLoggedIn] = useState("Login");
@@ -26,6 +26,7 @@ function Navbar(showBrowse) {
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
+            setShowBrowse(true);
             console.log('Do something')
         }
     }
