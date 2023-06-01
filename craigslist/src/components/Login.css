@@ -1,12 +1,65 @@
 .show {
-    display: block;
+    border-radius: 30px;
     background-color:#784c92;
     transition: 800ms;
     opacity:1;
     z-index: auto;
+    display: flex;
+    
+    
 }
 
 .show.active {
-    transform: translateY(100px) scale(0) rotateY(180deg);
+    transform: translateY(0px) scale(0) rotateY(180deg);
     opacity:0;
 }
+
+.login-text {
+    color: white;
+
+}
+
+.login-btn {
+    background-color: #d5b5e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .login-btn:hover {
+    background-color: #784c92;
+  }
+
+  .register-btn {
+    background-color: #d5b5e8;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .register-btn:hover {
+    background-color: #784c92;
+  }
+
+  .login-form {
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 8px;
+    margin: 0 auto;
+    width: 800px;
+    text-align: center;
+  }
+
+.login-box {
+    border-radius: 15px;
+    padding: 10px;
+}
+
