@@ -9,9 +9,15 @@ function Navbar(showBrowse) {
     const [searchInput, setSearchInput] = useState("");
     const [showLogin, setShowLogin] = useState(false);
     const [loggedIn, setLoggedIn] = useState("Login");
+    const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const onClickLogin = () => {
-        setShowLogin(!showLogin);
+        if (isLoggedIn) {
+        }
+        else {
+            setShowLogin(!showLogin);
+        }
+
     }
     const handleChange = (e) => {
         e.preventDefault();
@@ -23,10 +29,12 @@ function Navbar(showBrowse) {
             <a href={'/'}><img className='logo' src={logo} alt="logo"/></a>
             <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} value={searchInput} />
             <div>
-                <button className='navbar-button' onClick={onClickLogin}>{loggedIn}</button>
+                <Link to={`${isLoggedIn ? '/settings' : ''}`}>
+                    <button className='navbar-button' onClick={onClickLogin}>{loggedIn}</button>
+                </Link>
             </div>
             <div className={`hidden-login-container ${showLogin ? 'visible-login' : ''}`}>
-                <Login setLoggedIn={setLoggedIn} setShowLogin={setShowLogin}/>
+                <Login setLoggedIn={setLoggedIn} setShowLogin={setShowLogin} setIsLoggedIn={setIsLoggedIn}/>
             </div>
         </div>
     );

@@ -2,11 +2,13 @@ import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import "./Login.css"
 
-const Login = ({setLoggedIn, setShowLogin}) => {
+const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
 
-    const handleLoginIn = () => {
+
+    const handleLogin = () => {
         setLoggedIn("Settings");
         setShowLogin(false);
+        setIsLoggedIn(true);
     }
 
 
@@ -28,7 +30,7 @@ const Login = ({setLoggedIn, setShowLogin}) => {
                             name="password"
                             className="login-box"/> <br></br>
                         <input type="submit" value="LOGIN" className="login-btn"/>
-                        <Link to={'/register'} onClick={handleLoginIn}>
+                        <Link to={'/register'} onClick={handleLogin}>
                             <input type="submit" value="REGISTER" className="register-btn"/>
                         </Link>
                     </form>
