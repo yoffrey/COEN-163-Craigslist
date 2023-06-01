@@ -16,7 +16,6 @@
 
 .login-text {
     color: white;
-
 }
 
 .login-btn {
@@ -48,11 +47,9 @@
   }
 
   .login-form {
-    border-radius: 30px;
     display: flex;
     flex-direction: column;
     padding: 40px;
-    border-radius: 8px;
     margin: 0 auto;
     width: 800px;
     text-align: center;
