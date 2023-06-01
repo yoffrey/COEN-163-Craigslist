@@ -17,10 +17,10 @@
     position: relative;
     opacity: 0;
     left: -50vw;
+    transition: left 0.3s ease-out, width 0.3s ease-out;
 }
 
 .gallery-view-container {
-    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,8 +31,12 @@
     flex-grow: 1;
     width: 100%;
     margin: 10px;
-    left: 0;
-    transition: left 0.3s ease-out, width 0.3s ease-out;
+    position: relative; /* Add this line */
+    transition: left 0.3s ease-out, width 0.3s ease-out; /* Add transition property */
+
+    /* Add the desired values for left and width */
+    left: 0/* desired value */;
+    width: 100%/* desired value */;
 }
 
 .shift-gallery-view {
@@ -47,6 +51,7 @@
     height: calc(100% - 71px);
     left: 0;
     overflow-y: auto;
+    transition: left 0.3s ease-in, width 0.3s ease-in;
 }
 
 .hidden-map-container {
@@ -61,7 +66,7 @@
     height: calc(100% - 71px);
     right: -100vw;
     opacity: 0;
-    transition: right 0.3s ease-out, width 0.3s ease-out;
+    transition: right 0.3s ease-out;
 }
 
 .visible-map {

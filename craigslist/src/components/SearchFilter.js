@@ -25,23 +25,30 @@ function SearchFilter() {
         {value: "all", label: "All"}
     ]
 
+    const condition = [
+        {value: "new", label: "New"},
+        {value: "excellent", label: "Excellent"},
+        {value: "used", label: "Used"},
+        {value: "good", label: "Good"},
+        {value: "fair", label: "Fair"},
+        {value: "poor", label: "Poor"},
+        {value: "all", label: "All"}
+    ]
+
     const [open, setOpen] = React.useState(false);
 
     const handleOpen = () => {
         setOpen(!open);
     };
     return (
-        <>
-            <div >
-                Distance
-                <Dropdown placeHolder={'15 min'} options={distance}/>
-            </div>
-
-            <div>
-                color
-                <Dropdown placeHolder={'All'} options={colors}/>
-            </div>
-        </>
+        <div className={'filters'}>
+            Distance
+            <Dropdown placeHolder={'15 min'} options={distance}/>
+            Color
+            <Dropdown placeHolder={'All'} options={colors}/>
+            Condition
+            <Dropdown placeHolder={'All'} options={condition}/>
+        </div>
     );
 }
 
