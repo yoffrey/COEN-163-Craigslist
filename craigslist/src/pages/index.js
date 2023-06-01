@@ -19,7 +19,9 @@ function Home(){
         <>
             <div className={'home-button-container'}>
                 {showBrowseButton ? <button className={'browse-button'} onClick={onClickBrowse}>Browse</button>: null}
-                {showUploadButton ? <Link to={'/upload'} className={'browse-button'}>Upload</Link>: null}
+                {showUploadButton ? <Link to={'/upload'} >
+                    <button className={'browse-button'}>Upload</button>
+                </Link>: null}
             </div>
             <div className={`hidden-browse-container ${showBrowse ? 'visible-browse' : ''}`}>
                 {<MainCategory />}

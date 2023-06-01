@@ -21,6 +21,7 @@
 }
 
 .gallery-view-container {
+    display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: flex-start;
@@ -31,12 +32,9 @@
     flex-grow: 1;
     width: 100%;
     margin: 10px;
-    position: relative; /* Add this line */
-    transition: left 0.3s ease-out, width 0.3s ease-out; /* Add transition property */
-
-    /* Add the desired values for left and width */
-    left: 0/* desired value */;
-    width: 100%/* desired value */;
+    position: relative;
+    transition: left 0.3s ease-out, width 0.3s ease-out;
+    left: 0;
 }
 
 .shift-gallery-view {
@@ -74,6 +72,7 @@
     opacity: 1;
     margin: 10px;
     right: 0;
+    border-radius: 40px;
 }
 
 .gallery-sidebar-button:hover {
