@@ -2,11 +2,6 @@ import React, {useState, useEffect} from "react";
 import GalleryCard from "./GalleryCard";
 
 function GalleryView(subCategorySelection) {
-    const [itemIndex, setItemIndex] = useState('');
-
-    const handleClick = (index) => {
-        setItemIndex(index)
-    }
 
     return (
         <>
