@@ -8,6 +8,7 @@ import MainCategory from "./MainCategory";
 function Navbar(showBrowse) {
     const [searchInput, setSearchInput] = useState("");
     const [showLogin, setShowLogin] = useState(false);
+    const [loggedIn, setLoggedIn] = useState("Login");
 
     const onClickLogin = () => {
         setShowLogin(!showLogin);
@@ -22,10 +23,10 @@ function Navbar(showBrowse) {
             <a href={'/'}><img className='logo' src={logo} alt="logo"/></a>
             <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} value={searchInput} />
             <div>
-                <button className='navbar-button' onClick={onClickLogin}>Login</button>
+                <button className='navbar-button' onClick={onClickLogin}>{loggedIn}</button>
             </div>
             <div className={`hidden-login-container ${showLogin ? 'visible-login' : ''}`}>
-                <Login stateChanger={showLogin}/>
+                <Login setLoggedIn={setLoggedIn} setShowLogin={setShowLogin}/>
             </div>
         </div>
     );

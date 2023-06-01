@@ -1,7 +1,15 @@
 import React, {useState} from "react";
+import { Link } from "react-router-dom";
 import "./Login.css"
 
-const Login = ({isShowLogin}) => {
+const Login = ({setLoggedIn, setShowLogin}) => {
+
+    const handleLoginIn = () => {
+        setLoggedIn("Settings");
+        setShowLogin(false);
+    }
+
+
     return (
         <div className={'${!isShowLogin ? "active": ""} show'}>
             <div className="login-form">
@@ -20,7 +28,9 @@ const Login = ({isShowLogin}) => {
                             name="password"
                             className="login-box"/> <br></br>
                         <input type="submit" value="LOGIN" className="login-btn"/>
-                        <input type="submit" value="REGISTER" className="register-btn"/>
+                        <Link to={'/register'} onClick={handleLoginIn}>
+                            <input type="submit" value="REGISTER" className="register-btn"/>
+                        </Link>
                     </form>
                 </div>
             </div>
