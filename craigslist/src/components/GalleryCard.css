@@ -53,4 +53,5 @@
     overflow: hidden;
     width: auto;
     background-color: gray;
+    border-bottom-right-radius: 10px;
 }
