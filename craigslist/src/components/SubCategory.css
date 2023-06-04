@@ -11,6 +11,7 @@
     margin: 10px;
     height: calc(100% - 71px);
     transition: opacity 0.3s ease-out, left 0.7s ease-out;
+    border: 2px solid #784c92;
 }
 
 .shift-sub-category-container {
@@ -36,6 +37,7 @@
     position: relative;
     transition: left 0.3s ease-out, width 0.3s ease-out;
     left: 0;
+    border: 2px solid #784c92;
 }
 
 .shift-gallery-view {
@@ -79,8 +81,7 @@
 .gallery-sidebar-button:hover {
     background-color: transparent;
     text-decoration: none;
-    color: #F19F4D;
-
+    color: #D5B5E8;
 }
 
 .gallery-sidebar-button,
@@ -94,7 +95,7 @@
     transition-duration: 0.2s;
     text-align: center;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 

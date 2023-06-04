@@ -40,13 +40,11 @@
 .browse-button:focus {
     background-color: #784c92;
     color: white;
-    transition-duration: 0.2s;
     border-radius: 12px;
     height: 38px;
     width: 100px;
     border: none;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     font-size: 16px;
     margin: 5px;
