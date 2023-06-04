@@ -7,9 +7,9 @@ import MainCategory from "./MainCategory";
 
 function Navbar({setShowBrowse}) {
     const [searchInput, setSearchInput] = useState("");
-    const [showLogin, setShowLogin] = useState(false);
     const [loggedIn, setLoggedIn] = useState("Login");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [showLogin, setShowLogin] = useState(false);
 
     const onClickLogin = () => {
         if (isLoggedIn) {
@@ -17,8 +17,8 @@ function Navbar({setShowBrowse}) {
         else {
             setShowLogin(!showLogin);
         }
-
     }
+
     const handleChange = (e) => {
         e.preventDefault();
         setSearchInput(e.target.value);
@@ -27,13 +27,17 @@ function Navbar({setShowBrowse}) {
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
             setShowBrowse(true);
-            console.log('Do something')
         }
+    }
+
+    const onLogoClick = () => {
+        setShowBrowse(false);
+        setShowLogin(false);
     }
 
     return (
         <div className='navbar-container'>
-            <Link to={'/'}><img className='logo' src={logo} alt="logo"/></Link>
+            <Link to={'/'} onClick={onLogoClick}><img  className='logo' src={logo} alt="logo" /></Link>
             <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} onKeyDown={handleKeyDown} value={searchInput} />
             <div>
                 <Link to={`${isLoggedIn ? '/settings' : ''}`}>

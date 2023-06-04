@@ -12,11 +12,15 @@ import { BrowserRouter as Router, Routes, Route}
 function App() {
     const [showBrowse, setShowBrowse] = useState(false);
 
+    const handleStateChange = (newValue) => {
+        setShowBrowse(newValue);
+    }
+
     return (
       <Router>
-              <Navbar setShowBrowse={setShowBrowse}/>
+              <Navbar setShowBrowse={setShowBrowse} />
               <Routes>
-                  <Route exact path='/' element={<Home setShowBrowse={showBrowse}/>}  />
+                  <Route exact path='/' element={<Home setShowBrowse={showBrowse} onStateChange={handleStateChange}/>}  />
                   <Route path='/upload' element={<Upload />} />
                   <Route path='/product' element={<Product />} />
                   <Route path='/register' element={<Register />} />
