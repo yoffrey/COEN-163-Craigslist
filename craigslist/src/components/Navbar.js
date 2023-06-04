@@ -3,7 +3,6 @@ import React, {useState} from "react";
 import logo from "../images/logo.png";
 import './Navbar.css';
 import Login from "./Login";
-import MainCategory from "./MainCategory";
 
 function Navbar({setShowBrowse}) {
     const [searchInput, setSearchInput] = useState("");

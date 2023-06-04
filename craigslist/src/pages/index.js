@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { Link } from "react-router-dom";
 import MainCategory from "../components/MainCategory";
 import './index.css';
@@ -7,8 +7,6 @@ function Home({ setShowBrowse, onStateChange }){
     const onClickBrowse = () => {
         onStateChange(true);
     }
-
-    console.log(setShowBrowse);
 
     return (
         <>
