@@ -37,7 +37,7 @@ function Navbar({setShowBrowse}) {
     return (
         <div className='navbar-container'>
             <Link to={'/'} onClick={onLogoClick}><img  className='logo' src={logo} alt="logo" /></Link>
-            <input className={'search-input'} type={'text'} placeholder={'try: car newer than 2010 with less than 100,000 miles within 20 miles from me'} onChange={handleChange} onKeyDown={handleKeyDown} value={searchInput} />
+            <input className={'search-input'} type={'text'} placeholder={'red suv newer then 2010 less than 100,000 miles within 15 minutes from me 25 mpg'} onChange={handleChange} onKeyDown={handleKeyDown} value={searchInput} />
             <div>
                 <Link to={`${isLoggedIn ? '/settings' : ''}`}>
                     <button className='navbar-button' onClick={onClickLogin}>{loggedIn}</button>

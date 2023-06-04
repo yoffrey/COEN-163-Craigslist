@@ -1,12 +1,11 @@
 .show {
     border-radius: 30px;
-    background-color:#784c92;
+    background-color:#d5b5e8;
     transition: 800ms;
     opacity:1;
     z-index: auto;
     display: flex;
-    
-    
+    border: 2px solid #784c92;
 }
 
 .show.active {
@@ -15,36 +14,26 @@
 }
 
 .login-text {
-    color: white;
+    color: #784c92;
 }
 
 .login-btn {
-    background-color: #d5b5e8;
+    background-color: #784c92;
     color: white;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     padding: 10px 20px;
     font-size: 20px;
     cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
   }
   
   .login-btn:hover {
-    background-color: #784c92;
+    background-color: #d5b5e8;
+      color: #784c92;
   }
 
-  .register-btn {
-    background-color: #d5b5e8;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 10px 20px;
-    font-size: 20px;
-    cursor: pointer;
-  }
-  
-  .register-btn:hover {
-    background-color: #784c92;
-  }
 
   .login-form {
     display: flex;
@@ -58,8 +47,11 @@
 .login-box {
     border-radius: 15px;
     padding: 10px;
+    border: 2px solid #784c92;
+    margin-bottom: 5px;
+    width: 90%;
 }
 
 .usr-name {
-    color: white;
+    color: #784c92;
 }

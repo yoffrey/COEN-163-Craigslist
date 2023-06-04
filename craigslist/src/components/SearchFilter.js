@@ -42,11 +42,11 @@ function SearchFilter() {
     };
     return (
         <div className={'filters'}>
-            Distance
+            <div className={'filter-name'}>Distance</div>
             <Dropdown placeHolder={'15 min'} options={distance}/>
-            Color
+            <div className={'filter-name'}>Color</div>
             <Dropdown placeHolder={'All'} options={colors}/>
-            Condition
+            <div className={'filter-name'}>Condition</div>
             <Dropdown placeHolder={'All'} options={condition}/>
         </div>
     );

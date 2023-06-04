@@ -35,7 +35,7 @@ const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
                             className="login-box"/> <br></br> <br></br>
                         <button onClick={handleLogin} className="login-btn">Login</button>
                         <Link to={'/register'} onClick={handleRegister}>
-                            <button className="register-btn">Register</button>
+                            <button className="login-btn">Register</button>
                         </Link>
                     </form>
                 </div>
