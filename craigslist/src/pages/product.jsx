@@ -192,6 +192,7 @@ function Product () {
                         </div>
                     </div>
                     <div style={{display: 'inline-block'}} className="product-container">
+                    <button style={{backgroundColor: '#784C92', color:'white',marginTop:'10px', borderRadius:'5px'}} type="none" className="btn btn-default">Recently Viewed</button>
                         <div className="panel panel-default" style={{height: 'auto', backgroundColor: '#D9D9D9'}}>
                             <div className="panel-body">
                                 <table>
