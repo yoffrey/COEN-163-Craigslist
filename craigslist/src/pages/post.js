@@ -65,7 +65,8 @@ function Post(){
     return (
         <div className={'post-page-container'}>
             <div className={'post-container'}>
-                <div className={'title-price-container'}>
+                <div className={'inner-post-container'}>
+                    <div className={'title-price-container'}>
                         <div className={'title'}>
                             <div className={'post-labels'}>Posting Title</div>
                             <input
@@ -82,68 +83,69 @@ function Post(){
                                 name="price"
                             />
                         </div>
-                </div>
-                <div className={'post-labels'}>Description</div>
-                <input
-                    className={'description-input'}
-                    type="text"
-                    name="title"
-                />
-                <div className={'post-labels'}>Tags</div>
-                <input
-                    value={input}
-                    className={'post-input'}
-                    placeholder="  Enter a tag"
-                    onKeyDown={onKeyDown}
-                    onKeyUp={onKeyUp}
-                    onChange={onChange}
-                />
-                <div className="tags">
-                    {tags.map((tag, index) => (
-                        <div className="tag">
-                            {tag}
-                            <button onClick={() => deleteTag(index)}>x</button>
+                    </div>
+                    <div className={'post-labels'}>Description</div>
+                    <input
+                        className={'description-input'}
+                        type="text"
+                        name="title"
+                    />
+                    <div className={'post-labels'}>Tags</div>
+                    <input
+                        value={input}
+                        className={'post-input'}
+                        placeholder="  Enter a tag"
+                        onKeyDown={onKeyDown}
+                        onKeyUp={onKeyUp}
+                        onChange={onChange}
+                    />
+                    <div className="tags">
+                        {tags.map((tag, index) => (
+                            <div className="tag">
+                                {tag}
+                                <button onClick={() => deleteTag(index)}>x</button>
+                            </div>
+                        ))}
+                    </div>
+                    <div className={'post-labels'}>Selected Meetup Locations</div>
+                    <div className={'post-location-container'}>
+                        <div className={'post-locations'}>
+                            <div className={'location-name'}>Voyager-Santa Clara University</div>
+                            <div className={'location-address'}>2221 The Alameda, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>5 min</div>
                         </div>
-                    ))}
+                        <div className={'post-locations'}>
+                            <div className={'location-name'}>Santa Clara Police Department</div>
+                            <div className={'location-address'}>601 El Camino Real, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>7 min</div>
+                        </div>
+                        <div className={'post-locations'}>
+                            <div className={'location-name'}>City of Santa Clara City Hall</div>
+                            <div className={'location-address'}>1500 Warburton Ave, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>10 min</div>
+                        </div>
+                        <div className={'post-locations'}>
+                            <div className={'location-name'}>SCU</div>
+                            <div className={'location-address'}>500 El Camino Real, Santa Clara, CA 95053</div>
+                            <div className={'location-distance'}>1 min</div>
+                        </div>
+                        {addLocation && <div className={'post-locations'}>
+                            <div className={'location-name'}>SJSU</div>
+                            <div className={'location-address'}>1 Washington Sq, San Jose, CA 95192</div>
+                            <div className={'location-distance'}>13 min</div>
+                        </div>}
+                    </div>
+                    <div className={'post-labels'}>Add Address</div>
+                    <input
+                        className={'post-input'}
+                        type="text"
+                        name="title"
+                        value={addressInput}
+                        onChange={handleAddressChange}
+                        onKeyDown={onLocationKeyDown}
+                    />
+                    <button onClick={handleSubmit} className={'post-submit-button'}>Submit Post</button>
                 </div>
-                <div className={'post-labels'}>Selected Meetup Locations</div>
-                <div className={'post-location-container'}>
-                    <div className={'post-locations'}>
-                        <div className={'location-name'}>Voyager-Santa Clara University</div>
-                        <div className={'location-address'}>2221 The Alameda, Santa Clara, CA 95050</div>
-                        <div className={'location-distance'}>5 min</div>
-                    </div>
-                    <div className={'post-locations'}>
-                        <div className={'location-name'}>Santa Clara Police Department</div>
-                        <div className={'location-address'}>601 El Camino Real, Santa Clara, CA 95050</div>
-                        <div className={'location-distance'}>7 min</div>
-                    </div>
-                    <div className={'post-locations'}>
-                        <div className={'location-name'}>City of Santa Clara City Hall</div>
-                        <div className={'location-address'}>1500 Warburton Ave, Santa Clara, CA 95050</div>
-                        <div className={'location-distance'}>10 min</div>
-                    </div>
-                    <div className={'post-locations'}>
-                        <div className={'location-name'}>SCU</div>
-                        <div className={'location-address'}>500 El Camino Real, Santa Clara, CA 95053</div>
-                        <div className={'location-distance'}>1 min</div>
-                    </div>
-                    {addLocation && <div className={'post-locations'}>
-                        <div className={'location-name'}>SJSU</div>
-                        <div className={'location-address'}>1 Washington Sq, San Jose, CA 95192</div>
-                        <div className={'location-distance'}>13 min</div>
-                    </div>}
-                </div>
-                <div className={'post-labels'}>Add Address</div>
-                <input
-                    className={'post-input'}
-                    type="text"
-                    name="title"
-                    value={addressInput}
-                    onChange={handleAddressChange}
-                    onKeyDown={onLocationKeyDown}
-                />
-                <button onClick={handleSubmit} className={'post-submit-button'}>Submit Post</button>
             </div>
         </div>
     );
