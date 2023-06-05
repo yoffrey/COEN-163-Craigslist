@@ -157,14 +157,14 @@ function Product () {
                     </div>
                 </td>
                 <td style={{height: 'auto', overflow: 'auto', verticalAlign: 'top'}}>
-                    <div className="panel panel-default" style={{height: '470px', backgroundColor: '#F0EDED'}}>
+                    <div className="panel panel-default" style={{height: '430px', backgroundColor: 'transparent'}}>
                         <div className="panel-body">
                             <div className="panel panel-default" style={{height: '390px', backgroundColor: '#D9D9D9'}}>
                                 <div className="panel-body">
                                     <div className="product-containerr">
                                         <div className="middle-section">
                                             <div className="image-containerr">
-                        <span style={{verticalAlign: 'top'}}>
+                        <span style={{verticalAlign: 'top', padding:'25px'}}>
                           The 1190 Adventure R has the heart and soul of the original
                           KTM Adventure - puristic, raw, sportily challenging for rider
                           and machine. This is the "non plus ultra" for sporty offroad
@@ -187,8 +187,8 @@ function Product () {
                                     </div>
                                 </div>
                             </div>
-                            <button style={{backgroundColor: '#D5B5E8'}} type="button" className="btn btn-default">Add to Cart</button>
-                            <button style={{backgroundColor: '#D5B5E8', float: 'right'}} type="button" className="btn btn-default">Back to items</button>
+                            <button style={{backgroundColor: '#D5B5E8', marginTop:'10px'}} type="button" className="btn btn-default">Add to Cart</button>
+                            <button style={{backgroundColor: '#D5B5E8', marginTop:'10px', float: 'right'}} type="button" className="btn btn-default">Back to items</button>
                         </div>
                     </div>
                     <div style={{display: 'inline-block'}} className="product-container">
