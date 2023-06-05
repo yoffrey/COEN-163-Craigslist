@@ -22,6 +22,11 @@ function MainMap() {
       iconSize: [38, 38]
     });
 
+    const customMa = new Icon({
+      iconUrl: require("../images/yellow_mama.png"),
+      iconSize: [50,80]
+    })
+
     return ( 
         <MapContainer center={position} zoom={13} scrollWheelZoom={false} style = {{height: '100%', width: '100%', position: "absolute"}}>
         <TileLayer
@@ -29,7 +34,13 @@ function MainMap() {
           url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         />
 
-        <Marker position={position} icon = {customIcon} eventHandlers = {{click: handleClick}}>    
+        <Marker position={position} icon = {customMa}>    
+          <Tooltip>
+            You
+          </Tooltip>
+        </Marker>
+
+        <Marker position={[37.354, -121.94]} icon = {customIcon}  eventHandlers={{click: handleClick}}> 
           <Tooltip>
             Table and Chairs
           </Tooltip>
