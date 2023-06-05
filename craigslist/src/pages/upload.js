@@ -4,8 +4,6 @@ import DragDropFile from "../components/DragDropFile";
 import './index.css';
 
 function Upload(){
-
-
     return (
             <DragDropFile />
     );

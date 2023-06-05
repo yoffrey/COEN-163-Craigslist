@@ -1,0 +1,169 @@
+.navbar_link{
+    display:block;
+    font-family:"Yaldevi Colombo";
+    line-height: 2.5;
+    background-color: white;
+    border-radius: 10px;
+    line-height: 2.5;
+    /*
+     background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;*/
+    padding: 0 50px;
+    margin-bottom:20px;
+
+}
+.mainBackground {
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 1000px;
+    height: 520px;
+    background: white;
+    border: solid;
+    position: fixed;
+    bottom: 1.8em;
+    left: 10.5em;
+}
+
+.AccountSetting {
+    border-radius: 25px;
+    background: #D5B5E8;
+
+    padding: 20px;
+    width: 200px;
+    height: 450px;
+    position: absolute;
+    left: 15em;
+    top: 16.7em;
+
+}
+.AccountSetting {
+    z-index: 10;
+}
+.AccountSetting h3{
+    text-align: center;
+    font-family: "Yaldevi Colombo"
+
+}
+
+.parent {
+    position: fixed;
+    border-radius: 25px;
+    background: #D5B5E8;
+    padding: 20px;
+    width: 580px;
+    margin: 10vw 10vw;
+    height: 300px;
+    top: 17em;
+    left: 24em;
+}
+
+.child {
+    border-radius: 20px;
+    padding: 20px;
+    width: 495px;
+    height: 95px;
+    background: white;
+    position: fixed;
+    bottom: 15.6em;
+    left: 35.5em;
+}
+
+.child {
+    z-index: 10;
+}
+
+.child2 {
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    height: 95px;
+    background: white;
+    position: fixed;
+    bottom: 6em;
+    left: 35.5em;
+}
+
+.child2 {
+    z-index: 10;
+}
+.child3 {
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 120px;
+    height: 95px;
+    background: white;
+    position: fixed;
+    bottom: 6em;
+    left: 58.9em;
+}
+
+.child3 {
+    z-index: 10;
+}
+
+.userBackground {
+
+    border-radius: 25px;
+    background: #D5B5E8;
+    padding: 20px;
+    width: 580px;
+    position: relative;
+    height: 90px;
+    top: 16em;
+    left: 32.5em;
+}
+
+
+.userInput {
+
+
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 50px;
+    background: white;
+    position: fixed;
+    bottom: 27.8em;
+    left: 41.3em;
+}
+
+.userInput {
+    z-index: 10;
+}
+
+.userPic {
+    border-radius: 20px;
+    padding: 20px;
+    width: 55px;
+    height: 50px;
+    background: white;
+    position: fixed;
+    bottom: 27.8em;
+    left: 34.3em;
+}
+
+.userPic {
+    z-index: 10;
+}
+
+.button {
+    border-radius: 20px;
+    padding: 20px;
+    width: 400px;
+    height: 50px;
+    background: white;
+    position: fixed;
+    bottom: 28.0em;
+    left: 41.3em;
+}
+
+@media only screen and (min-width: 1000px) {
+
+}
+
+
+
