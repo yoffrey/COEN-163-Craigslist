@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Login.css"
 
 
-const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
+const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn, onStateChange}) => {
     const handleLogin = (event) => {
         event.preventDefault();
         setLoggedIn("Settings");

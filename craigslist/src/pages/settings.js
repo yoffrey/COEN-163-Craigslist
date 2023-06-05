@@ -54,7 +54,7 @@ const Settings = () => {
             <div className={'account-settings-container'}>
                 <div className={'account-name-image-container'}>
                     <img className={'profile-picture'} src={User} alt={'Profile Picture'} />
-                    <strong className={'user-name-text'} >John Doe</strong>
+                    <strong className={'user-name-text'} >{profile.name}</strong>
                     <h3 className={'logout-text'}>Logout</h3>
                 </div>
                 <div className={'profile-fav-location-container'}>
@@ -143,7 +143,24 @@ const Settings = () => {
                         </form>
                     </div>
                     <div className={'fav-location'}>
-                        hi
+                        <div className={'location-title'}>Favorite Meetup Locations
+                            <button className="add-button">+</button>
+                        </div>
+                        <div className={'locations'}>
+                            <div className={'location-name'}>Voyager-Santa Clara University</div>
+                            <div className={'location-address'}>2221 The Alameda, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>5 min</div>
+                        </div>
+                        <div className={'locations'}>
+                            <div className={'location-name'}>Santa Clara Police Department</div>
+                            <div className={'location-address'}>601 El Camino Real, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>7 min</div>
+                        </div>
+                        <div className={'locations'}>
+                            <div className={'location-name'}>City of Santa Clara City Hall</div>
+                            <div className={'location-address'}>1500 Warburton Ave, Santa Clara, CA 95050</div>
+                            <div className={'location-distance'}>10 min</div>
+                        </div>
                     </div>
                 </div>
             </div>
