@@ -1,7 +1,7 @@
 import './GalleryCard.css';
 import { Link } from "react-router-dom";
 
-function GalleryCard({key, name, price, image}) {
+function GalleryCard({name, price, image}) {
     return (
         <div className={'gallery-card-container'} >
             <Link to={'/product'} >

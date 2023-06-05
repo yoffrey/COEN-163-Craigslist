@@ -1,9 +1,8 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import './SubCategory.css';
 import GalleryView from './GalleryView';
 import forSale from '../data/forsale.json';
 import MainMap from './MainMap';
-import MainCategory from "./MainCategory";
 
 function SubCategory({category, mapBool}) {
     const [subCategorySelection, setSubCategorySelection] = useState('all')

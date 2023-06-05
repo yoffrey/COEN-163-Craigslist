@@ -13,6 +13,11 @@
     display: none;
 }
 
+.drag-drop-text {
+    font-size: 20px;
+    color: #784c92;
+}
+
 #label-file-upload {
     height: 100%;
     display: flex;
@@ -21,7 +26,7 @@
     border-width: 2px;
     border-radius: 1rem;
     border-style: dashed;
-    border-color: #cbd5e1;
+    border-color: #784c92;
     background-color: #f8fafc;
 }
 
@@ -32,10 +37,10 @@
 .upload-button {
     cursor: pointer;
     padding: 0.25rem;
-    font-size: 1rem;
+    font-size: 20px;
     border: none;
-    font-family: 'Oswald', sans-serif;
     background-color: transparent;
+    color: #784c92;
 }
 
 .upload-button:hover {

@@ -1,22 +1,21 @@
-body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: radial-gradient(#d5b5e8, #ffffff);
-  
-}
-
 .register-container {
+  height: calc(100vh - 56px);
   display: flex;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
-  padding: 40px;
   border-radius: 8px;
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
   text-align: center;
+}
+
+@media only screen and (min-width: 1000px) {
+  .register-container {
+    height: calc(100% - 165px);
+    justify-content: center;
+  }
 }
 
 h1 {
@@ -39,27 +38,37 @@ h1 {
   text-align: left;
 }
 
-/*Please change this to a different className so it doesnt affect all inputs*/
-/*input {*/
-/*  width: 100%;*/
-/*  padding: 8px;*/
-/*  font-size: 16px;*/
-/*  border-radius: 8px;*/
-/*  border: 1px solid #ccc;*/
-/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-/*}*/
+.sign-up-header {
+  color: #784c92;
+}
 
+.sign-up-inputs,
+.sign-up-inputs:focus {
+  outline: none !important;
+  width: 400px;
+  height: 40px;
+  padding-left: 15px;
+  font-size: 16px;
+  border-radius: 15px;
+  border: 2px solid #784c92;
+}
+
+.sign-up-labels {
+  color: #784c92;
+}
 
 .register-button {
-  background-color: #d5b5e8;
+  background-color: #784c92;
   color: white;
   border: none;
-  border-radius: 4px;
   padding: 10px 20px;
   font-size: 20px;
   cursor: pointer;
+  border-radius: 12px;
+  width: 120px;
 }
 
 .register-button:hover {
-  background-color: #784c92;
+  background-color: #d5b5e8;
+  color: #784c92;
 }

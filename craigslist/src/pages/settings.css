@@ -1,0 +1,203 @@
+.settings-page-container {
+    width: 100%;
+    height: calc(100% - 85px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.account-settings-container {
+    height: 100%;
+    width: 95%;
+}
+
+.account-name-image-container {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+
+.user-name-text {
+    color: #784C92;
+    font-size: 36px;
+}
+
+@media only screen and (min-width: 1000px) {
+    .settings-page-container {
+        height: calc(100vh - 56px);
+        width: 100%;
+    }
+
+    .account-settings-container {
+        width: 800px;
+        height: 600px;
+        background-color: white;
+        border: 2px solid #784c92;
+        border-radius: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .account-name-image-container {
+        width: 85%;
+        height: 80px;
+        background-color: #784C92;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 30px;
+        margin-bottom: 10px;
+    }
+
+    .profile-fav-location-container {
+        width: 85%;
+        height: 400px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #d5b5e8;
+        border: 2px solid #784c92;
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 30px;
+        margin: 10px;
+    }
+
+    .fav-location {
+        width: 50%;
+        height: 100%;
+        padding: 10px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #d5b5e8;
+        border: 2px solid #784c92;
+        margin: 10px;
+    }
+
+    .user-name-text {
+        color: white;
+        font-size: 36px;
+    }
+}
+
+
+
+.logout-text {
+    color: white;
+    padding: 10px;
+}
+
+.logout-text:hover {
+    color: #d5b5e8;
+    padding: 10px;
+}
+
+.profile-picture {
+    height: 80%;
+    width: auto;
+    padding: 10px;
+}
+
+
+.account-labels {
+    color: #784c92;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.profile-content {
+    width: 100%;
+}
+
+.settings-inputs,
+.settings-inputs:focus {
+    outline: none !important;
+    width: 90%;
+    height: 40px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid #784c92;
+}
+
+.form-container {
+    width: 100%;
+}
+
+.locations {
+    border-radius: 14px;
+    padding: 10px;
+    background-color: white;
+    border: 2px solid #784c92;
+    width: 95%;
+    height: auto;
+    margin: 5px;
+    overflow: hidden;
+}
+
+.location-title {
+    font-size: 20px;
+    color: #784c92;
+    font-weight: bold;
+}
+
+.location-name {
+    font-size: 20px;
+    color: #784c92;
+    font-weight: bold;
+}
+
+.location-address {
+    color: #784c92;
+
+}
+
+.location-distance {
+    color: #784c92;
+    font-weight: bold;
+}
+
+.add-button {
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin-left: 3px;
+    background-color: #784C92;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+.add-button:hover {
+    width: 24px;
+    height: 24px;
+    border: none;
+    margin-left: 3px;
+    background-color: #d5b5e8;
+    color: #784C92;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
