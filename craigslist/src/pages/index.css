@@ -19,6 +19,7 @@
     .hidden-browse-container {
         position: relative;
         left: 50%;
+        bottom: -50vh;
         opacity: 0;
         transform: translate(-50%, 100%);
         transition: opacity 0.3s, transform 0.3s ease, bottom 0.3s;
@@ -28,6 +29,7 @@
         flex-grow: 1;
         opacity: 1;
         width: 100%;
+        bottom: 0;
         height: calc(100vh - 56px);
         transform: translate(-50%, 0%);
     }
@@ -46,6 +48,7 @@
     display: inline-block;
     font-size: 16px;
     margin: 5px;
+
 }
 
 .browse-button:hover {

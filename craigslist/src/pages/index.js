@@ -8,6 +8,8 @@ function Home({ setShowBrowse, onStateChange }){
         onStateChange(true);
     }
 
+    console.log(setShowBrowse);
+
     return (
         <>
             <div className={'home-button-container'}>

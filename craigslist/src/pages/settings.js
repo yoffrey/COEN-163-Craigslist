@@ -60,7 +60,7 @@ const Settings = () => {
                 <div className={'profile-fav-location-container'}>
                     <div className={'profile-info'}>
                         {isEditing ? (
-                            <form className={'form-container'} onSubmit={handleSubmit}>
+                            <form className={'settings-form-container'} onSubmit={handleSubmit}>
                                 <div className={'profile-content'}>
                                     <h1 className={'account-labels'}>Email:</h1>
                                         <input
@@ -95,7 +95,7 @@ const Settings = () => {
                                 <button className={'browse-button'} onClick={() => setIsEditing(false)}>Cancel</button>
                             </form>
                         ) : (
-                            <form className={'form-container'}>
+                            <form className={'settings-form-container'}>
                                 <div className={'profile-content'}>
                                     <h1 className={'account-labels'}>Email:</h1>
                                     <input
@@ -132,7 +132,7 @@ const Settings = () => {
                                 <button onClick={handleEdit} className={'browse-button'}>Edit</button>
                             </form>
                         )}
-                        <form className={'form-container'}>
+                        <form className={'settings-form-container'}>
                             <h1 className={'account-labels'}>Change Password:</h1>
                             <input
                                 className={'settings-inputs'}

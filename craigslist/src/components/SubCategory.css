@@ -65,7 +65,7 @@
     width: calc(100% + 240px);
     border-radius: 40px;
     height: calc(100% - 71px);
-    right: -100vw;
+    right: -200vw;
     opacity: 0;
     transition: right 0.3s ease-out;
 }

@@ -2,18 +2,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import './Navbar.css';
-import Login from "./Login";
-import MainCategory from "./MainCategory";
-import Messages from "./messages";
+import Messages from '../components/Messages';
 
 const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) => {
     const [searchInput, setSearchInput] = useState("");
     const [showLogin, setShowLogin] = useState(false);
-    const [loggedIn, setLoggedIn] = useState("Login");
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [showMessages, setShowMessages] = useState(false);
-    const [Messages, setMessages] = useState("Messages");
     const navigate = useNavigate();
+    const [showMessages, setShowMessages] = useState(false);
+    const [messages, setMessages] = useState("Messages");
 
     const onClickLogin = () => {
         if (setIsLoggedIn) {
@@ -22,11 +18,6 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
         }
     };
 
-    }
-    const onClickMessages = () => {
-            setShowMessages(!showMessages);
-
-    }
     const handleChange = (e) => {
         e.preventDefault();
         setSearchInput(e.target.value);
@@ -54,10 +45,18 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
         setShowLogin(false);
     };
 
+    const onClickMessages = () => {
+        setShowMessages(!showMessages);
+    }
+
     return (
         <div className='navbar-container'>
             <Link to='/' onClick={onLogoClick}><img className='logo' src={logo} alt="logo" /></Link>
             <input className='search-input' type='text' placeholder='red suv newer than 2010 less than 100,000 miles within 15 minutes from me 25 mpg' onChange={handleChange} onKeyDown={handleKeyDown} value={searchInput} />
+            <div>
+                {setIsLoggedIn && <button className='msg-btn' onClick={onClickMessages}>{messages}</button>}
+            </div>
+            {showMessages && <Messages setMessages={setMessages} setShowMessages={setShowMessages} className={'visible-messages'}/>}
             <div>
                 <Link to={setIsLoggedIn ? '/settings' : ''}>
                     <button className='navbar-button' onClick={onClickLogin}>{setLoggedIn}</button>
@@ -87,15 +86,6 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div>
-                <Link to={`${showMessages ? '/messages' : ''}`}>
-                    <button className='navbar-button-message' onClick={onClickMessages}>{Messages}</button>
-                </Link>
-            </div>
-            <div className={`hidden-messages-container ${showMessages ? 'visible-messages' : ''}`}>
-                <Messages setMessages={setMessages} setShowMessages={setShowMessages}/>
             </div>
         </div>
     );

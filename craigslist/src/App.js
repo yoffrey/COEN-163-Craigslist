@@ -6,7 +6,7 @@ import Post from './pages/post';
 import Product from './pages/product';
 import Register from './pages/register';
 import Settings from './pages/settings';
-import Messages from './components/messages.js';
+import Messages from './components/Messages.js';
 import { BrowserRouter as Router, Routes, Route}
   from 'react-router-dom';
 

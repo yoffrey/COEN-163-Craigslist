@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import { Link } from "react-router-dom";
-import './messages.css'
+import './Messages.css'
 
-function Messages(){
+function Messages() {
     const unhide = () => {
       var name = document.getElementById("welcomeForm").value;
       document.getElementById("hidden").style.display = "block";
@@ -31,7 +31,7 @@ function Messages(){
   <form action="/action_page.php" class="form-container">
     <h1>All Messages</h1>
     <div class="message">
-    
+
     <div class="all">
   <p>The Cat</p>
   <button type="button" class="btn message" onClick={openForm1}>Message</button>
