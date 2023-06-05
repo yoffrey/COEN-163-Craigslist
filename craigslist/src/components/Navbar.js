@@ -9,7 +9,6 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
     const [showLogin, setShowLogin] = useState(false);
     const navigate = useNavigate();
     const [showMessages, setShowMessages] = useState(false);
-    const [messages, setMessages] = useState("Messages");
 
     const onClickLogin = () => {
         if (setIsLoggedIn) {
@@ -85,8 +84,8 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
                     </div>
                 </div>
             </div>
-            {setIsLoggedIn && <button className='msg-btn' onClick={onClickMessages}>{messages}</button>}
-            {showMessages && <Messages setMessages={setMessages} setShowMessages={setShowMessages} className={'visible-messages'}/>}
+            {setIsLoggedIn && <button className='msg-btn' onClick={onClickMessages}>Messages</button>}
+            {showMessages && <Messages setShowMessages={setShowMessages} className={'visible-messages'}/>}
         </>
     );
 };
