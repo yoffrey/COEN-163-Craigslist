@@ -181,3 +181,11 @@
 .inner-post-container {
     margin: 30px;
 }
+
+.post-submit-button {
+    transition: color 0.3s;
+  }
+  
+  .post-submit-button:hover {
+    background-color: #d5b5e8;
+  }
