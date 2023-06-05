@@ -44,12 +44,15 @@
     text-align: center;
   }
 
-.login-box {
+.login-box,
+.login-box:focus {
+    outline: none !important;
     border-radius: 15px;
     padding: 10px;
     border: 2px solid #784c92;
     margin-bottom: 5px;
     width: 90%;
+
 }
 
 .usr-name {

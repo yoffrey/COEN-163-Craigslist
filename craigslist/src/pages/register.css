@@ -3,7 +3,6 @@
   display: flex;
   align-content: center;
   justify-content: flex-start;
-
   align-items: center;
   flex-direction: column;
   border-radius: 8px;
@@ -43,7 +42,9 @@ h1 {
   color: #784c92;
 }
 
-.sign-up-inputs {
+.sign-up-inputs,
+.sign-up-inputs:focus {
+  outline: none !important;
   width: 400px;
   height: 40px;
   padding-left: 15px;

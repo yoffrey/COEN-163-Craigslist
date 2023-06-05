@@ -1,7 +1,17 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './register.css';
 
-const RegisterForm = () => {
+const RegisterForm = ({setIsLoggedIn, setLoggedIn}) => {
+    const navigate = useNavigate();
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+        setIsLoggedIn(true);
+        setLoggedIn("Settings");
+        navigate('/');
+    }
+
     return (
       <div className="register-container">
         <h1 className={'sign-up-header'}>Sign Up</h1>
@@ -25,7 +35,7 @@ const RegisterForm = () => {
           <label className={'sign-up-labels'}>Confirm Password</label>
           <input className={'sign-up-inputs'} type="password" id="confirm-password" placeholder="" />
         </div>
-        <button className="register-button">Register</button>
+        <button onClick={handleRegister} className="register-button">Register</button>
       </div>
     );
   };
