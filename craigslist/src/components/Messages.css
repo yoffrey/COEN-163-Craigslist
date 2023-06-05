@@ -19,6 +19,7 @@
     border: 3px solid #f1f1f1;
     z-index: 9;
     border-radius: 5px;
+    height: 400px;
   }
   .chat-popups {
     display: none;
@@ -37,7 +38,6 @@
   }
   .form-container input {
     width: 100%;
-    padding: 15px;
     margin: 5px 0 22px 0;
     border: none;
     background: #f1f1f1;
@@ -52,16 +52,16 @@
   
   /*Submit/send button*/
   .form-container .btn {
-    background-color: #D5B5E8;
-    color: black;
+    background-color: #784C92;
+    color: white;
     padding: 16px 20px;
     border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom:10px;
     opacity: 0.8;
-    border-radius: 5px;
-  
+    border-radius: 14px;
+
   }
   .form-container .cancel {
     background-color: red;
@@ -73,13 +73,15 @@
   /*all of the messages and textbox*/
   div.message {
       overflow-y:scroll;
+    overflow-x: hidden;
       height:300px;
       font-size:14px;
   }
+
   .all {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
-    border-radius: 5px;
+    border-radius: 14px;
     padding: 5px;
     margin: 5px 0;
   }
@@ -119,4 +121,16 @@
   }
   #hidden{
     display: none;
+  }
+
+  .message-header {
+    font-size: 24px;
+    color: #784C92;
+  }
+
+  .chat-title {
+    font-size: 16px;
+    color: #784C92;
+    font-weight: bold;
+    margin-bottom: 5px;
   }
