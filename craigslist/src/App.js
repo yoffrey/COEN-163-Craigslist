@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "./components/Navbar.js";
 import Home from './pages';
 import Upload from './pages/upload';
@@ -10,11 +10,17 @@ import { BrowserRouter as Router, Routes, Route}
   from 'react-router-dom';
 
 function App() {
-  return (
+    const [showBrowse, setShowBrowse] = useState(false);
+
+    const handleStateChange = (newValue) => {
+        setShowBrowse(newValue);
+    }
+
+    return (
       <Router>
-              <Navbar />
+              <Navbar setShowBrowse={setShowBrowse} />
               <Routes>
-                  <Route exact path='/' element={<Home />}/>
+                  <Route exact path='/' element={<Home setShowBrowse={showBrowse} onStateChange={handleStateChange}/>}  />
                   <Route path='/upload' element={<Upload />} />
                   <Route path='/product' element={<Product />} />
                   <Route path='/register' element={<Register />} />

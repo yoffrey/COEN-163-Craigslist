@@ -9,7 +9,6 @@ const Icon = () => {
         </svg>
     );
 };
-
 const Dropdown = ({ placeHolder, options }) => {
     const [showMenu, setShowMenu] = useState(false);
     const [selectedValue, setSelectedValue] = useState(null);
@@ -59,7 +58,7 @@ const Dropdown = ({ placeHolder, options }) => {
             {showMenu && (
                 <div className={'dropdown-menu'}>
                 {options.map((option) => (
-                    <div onClick={() => onItemClick(option)} key={option.value} className={`dropdown-item ${isSelected(option) && "selected"}`}>
+                    <div onClick={() => onItemClick(option)} key={option.value} className={`dropdown-item ${isSelected(option) ? "selected" : ''}`}>
                         {option.label}
                     </div>
                 ))}
