@@ -2,7 +2,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from "react";
 import logo from "../images/logo.png";
 import './Navbar.css';
-import Login from "./Login";
 
 const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) => {
     const [searchInput, setSearchInput] = useState("");

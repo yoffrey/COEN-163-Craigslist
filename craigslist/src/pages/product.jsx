@@ -60,7 +60,7 @@ function Product () {
                 <th />
                 <th>
                     <div style={{paddingBottom: '6px', paddingTop: '6px', backgroundColor: '#784C92', color: 'white'}} className="alert alert-default d-inline-block" role="alert">
-                        <center>2020 Kawasawki Z650 ABS - $1200</center>
+                        <center>2018 KTM Super Adventure 1290 - $14,250</center>
                     </div>
                 </th>
                 <th />

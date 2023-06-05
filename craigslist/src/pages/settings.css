@@ -1,6 +1,6 @@
 .settings-page-container {
     width: 100%;
-    height: calc(100% - 165px);
+    height: calc(100% - 85px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,17 +8,21 @@
 }
 
 .account-settings-container {
-    background-color: #888888;
     height: 100%;
-    width: 100%;
+    width: 95%;
 }
 
 .account-name-image-container {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
 }
 
-.profile-info-container {
 
+.user-name-text {
+    color: #784C92;
+    font-size: 36px;
 }
 
 @media only screen and (min-width: 1000px) {
@@ -88,12 +92,14 @@
         border: 2px solid #784c92;
         margin: 10px;
     }
+
+    .user-name-text {
+        color: white;
+        font-size: 36px;
+    }
 }
 
-.user-name-text {
-    color: white;
-    font-size: 36px;
-}
+
 
 .logout-text {
     color: white;
