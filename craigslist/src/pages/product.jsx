@@ -55,7 +55,7 @@ function Product () {
     }
 
     return (
-        <table>
+        <table className= "bigass_container" position= "center" paddingLef>
             <tbody><tr>
                 <th />
                 <th>
@@ -68,17 +68,15 @@ function Product () {
             </tr>
             <tr>
                 <td>
-                    <div className="nav-buttons-container">
-                        <button style={{border: 'none', backgroundColor: 'white', paddingBottom: '160px'}} id="prev-button" className="nav-button" onCLick={handlePrevButton}><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">{/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg></button>
-                    </div>
+                  
                 </td>
                 <td style={{verticalAlign: 'top'}}>
                     <div style={{display: 'block'}} className="product-container">
                         <div className="middle-section">
                             <div className="image-container">
-                <span style={{verticalAlign: 'top'}}>
-                  <img style={{height: '470px'}} src={imageChoice} alt="Product Image" />
-                </span>
+                                <span style={{ verticalAlign: 'top', display: 'inline-block', width: '100%', height: '100%' }}>
+                                <img style={{ width: '800px', height: '533px', objectFit: 'cover' }} src={imageChoice} alt="Product Image" />
+                                </span>
                             </div>
                             <div className="description-container">
                             </div>
@@ -155,7 +153,7 @@ function Product () {
                 </td>
                 <td>
                     <div className="nav-buttons-container">
-                        <button style={{paddingRight: '25px', paddingBottom: '160px', border: 'none', backgroundColor: 'white'}} id="next-button" className="nav-button" onClick={handleNextButton}><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">{/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg></button>
+                        <button style={{paddingRight: '25px', paddingBottom: '0px', border: 'none', backgroundColor:'transparent'}} id="next-button" className="nav-button" onClick={handleNextButton}><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">{/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" /></svg></button>
                     </div>
                 </td>
                 <td style={{height: 'auto', overflow: 'auto', verticalAlign: 'top'}}>
@@ -200,7 +198,7 @@ function Product () {
                                     <tbody><tr>
                                         <td>
                                             <div className="nav-buttons-container">
-                                                <button style={{border: 'none', backgroundColor: '#D9D9D9'}} id="previous-button" className="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">{/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg></button>
+                                                <button style={{border: 'none', backgroundColor: 'transparent'}} id="previous-button" className="nav-button"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512">{/*! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. */}<path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg></button>
                                             </div>
                                         </td>
                                         <td>
