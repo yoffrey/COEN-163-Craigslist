@@ -4,12 +4,15 @@ import logo from "../images/logo.png";
 import './Navbar.css';
 import Login from "./Login";
 import MainCategory from "./MainCategory";
+import Messages from "./messages";
 
 function Navbar({setShowBrowse}) {
     const [searchInput, setSearchInput] = useState("");
     const [showLogin, setShowLogin] = useState(false);
     const [loggedIn, setLoggedIn] = useState("Login");
     const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [showMessages, setShowMessages] = useState(false);
+    const [Messages, setMessages] = useState("Messages");
 
     const onClickLogin = () => {
         if (isLoggedIn) {
@@ -17,6 +20,10 @@ function Navbar({setShowBrowse}) {
         else {
             setShowLogin(!showLogin);
         }
+
+    }
+    const onClickMessages = () => {
+            setShowMessages(!showMessages);
 
     }
     const handleChange = (e) => {
@@ -42,6 +49,15 @@ function Navbar({setShowBrowse}) {
             </div>
             <div className={`hidden-login-container ${showLogin ? 'visible-login' : ''}`}>
                 <Login setLoggedIn={setLoggedIn} setShowLogin={setShowLogin} setIsLoggedIn={setIsLoggedIn}/>
+            </div>
+
+            <div>
+                <Link to={`${showMessages ? '/messages' : ''}`}>
+                    <button className='navbar-button-message' onClick={onClickMessages}>{Messages}</button>
+                </Link>
+            </div>
+            <div className={`hidden-messages-container ${showMessages ? 'visible-messages' : ''}`}>
+                <Messages setMessages={setMessages} setShowMessages={setShowMessages}/>
             </div>
         </div>
     );

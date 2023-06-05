@@ -1,0 +1,122 @@
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: #D5B5E8;
+    color: black;
+    padding: 16px 20px;
+    border: solid black;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    border-radius: 5px;
+  }
+  .chat-popup {
+    /*display: none;*/
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    border-radius: 5px;
+  }
+  .chat-popups {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+  }
+  
+  /*background behind messages */
+  .form-container {
+    width: 500px;
+    padding: 10px;
+    background-color: white;
+  }
+  .form-container input {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 50px;
+  }
+  /* When textarea gets focused */
+  .form-container input:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  /*Submit/send button*/
+  .form-container .btn {
+    background-color: #D5B5E8;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 5px;
+  
+  }
+  .form-container .cancel {
+    background-color: red;
+  }
+  /* Add some hover effects to buttons */
+  .form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+  }
+  /*all of the messages and textbox*/
+  div.message {
+      overflow-y:scroll;
+      height:300px;
+      font-size:14px;
+  }
+  .all {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+  }
+  .all::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .container {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px 0;
+    float:right;
+  }
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+    float:left;
+  }
+  .container::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  .time-left {
+    float: left;
+    color: #999;
+  }
+  hr{
+    clear: both;
+  }
+  #hidden{
+    display: none;
+  }

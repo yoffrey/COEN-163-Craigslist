@@ -61,6 +61,20 @@
     font-size: 16px;
 }
 
+.navbar-button-message{
+    background-color: #784c92;
+    color: white;
+    transition-duration: 0.2s;
+    border-radius: 12px;
+    height: 38px;
+    width: 100px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
 
 .navbar-button:hover {
     background-color: #D5B5E8;
@@ -77,6 +91,21 @@
 }
 
 .visible-login {
+    opacity: 1;
+    left: calc(50vw - 250px);
+    top: calc(50vh - 200px);
+    width: 500px;
+    height: 400px;
+}
+.hidden-messages-container {
+    position: fixed;
+    opacity: 1;
+    left: 200vw;
+    top: 200vh;
+    z-index: 2;
+}
+
+.visible-messages {
     opacity: 1;
     left: calc(50vw - 250px);
     top: calc(50vh - 200px);

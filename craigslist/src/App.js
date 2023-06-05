@@ -6,6 +6,7 @@ import Post from './pages/post';
 import Product from './pages/product';
 import Register from './pages/register';
 import Settings from './pages/settings';
+import Messages from './components/messages.js';
 import { BrowserRouter as Router, Routes, Route}
   from 'react-router-dom';
 
@@ -21,6 +22,7 @@ function App() {
                   <Route path='/product' element={<Product />} />
                   <Route path='/register' element={<Register />} />
                   <Route path='/settings' element={<Settings />} />
+                  <Route path='/messages' element={<Messages />} />
                   <Route path='/post' element={<Post />} />
               </Routes>
       </Router>
