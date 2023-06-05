@@ -85,7 +85,8 @@ const Navbar = ({ setShowBrowse, setLoggedIn, setIsLoggedIn, onStateChange }) =>
                     </div>
                 </div>
             </div>
-            {setIsLoggedIn && <button className='msg-btn' onClick={onClickMessages}>{messages}</button>}
+            {setIsLoggedIn && <button className='msg-btn' onClick={onClickMessages}>Messages</button>}
+            {showMessages && <Messages setMessages={setMessages} setShowMessages={setShowMessages} className={'visible-messages'}/>}
         </>
     );
 };
