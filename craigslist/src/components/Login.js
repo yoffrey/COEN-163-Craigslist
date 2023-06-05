@@ -27,7 +27,6 @@ const Login = ({setLoggedIn, setShowLogin, setIsLoggedIn}) => {
                             type="text"
                             name="username"
                             className="login-box"/> <br></br>
-
                         <label className = "usr-name">Password</label><br></br>
                         <input 
                             type="password"
