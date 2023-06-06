@@ -55,7 +55,7 @@ function Product () {
     }
 
     return (
-        <table className= "bigass_container" position= "center" paddingLef>
+        <table className= "bigass_container" style={{position: 'center', paddingLeft:'50px'}}>
             <tbody><tr>
                 <th />
                 <th>
@@ -164,7 +164,7 @@ function Product () {
                                     <div className="product-containerr">
                                         <div className="middle-section">
                                             <div className="image-containerr">
-                        <span style={{verticalAlign: 'top', padding:'25px'}}>
+                        <span style={{verticalAlign: 'top', paddingTop:'65px', fontFamily:'Yaldevi-Colombo'}}>
                           The 1190 Adventure R has the heart and soul of the original
                           KTM Adventure - puristic, raw, sportily challenging for rider
                           and machine. This is the "non plus ultra" for sporty offroad
@@ -192,7 +192,7 @@ function Product () {
                         </div>
                     </div>
                     <div style={{display: 'inline-block'}} className="product-container">
-                    <button style={{backgroundColor: '#784C92', color:'white',marginTop:'10px', borderRadius:'5px'}} type="none" className="btn btn-default">Recently Viewed</button>
+                    <button style={{backgroundColor: '#784C92', color:'white',marginTop:'10px', marginBottom:'10px', borderRadius:'5px'}} type="none" className="btn btn-default">Recently Viewed</button>
                         <div className="panel panel-default" style={{height: 'auto', backgroundColor: '#D9D9D9'}}>
                             <div className="panel-body">
                                 <table>
