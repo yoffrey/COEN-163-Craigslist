@@ -55,7 +55,7 @@ function Product () {
     }
 
     return (
-        <table className= "bigass_container" style={{position: 'center', paddingLeft:'50px'}}>
+        <table className= "bigass_container" style={{position: 'center', paddingLeft:'120px'}}>
             <tbody><tr>
                 <th />
                 <th>
