@@ -174,22 +174,18 @@
 }
 
 .msg-btn {
-    margin-left: 5px;
-    background-color: #784c92;
-    color: white;
-    transition-duration: 0.2s;
-    border-radius: 12px;
-    height: 38px;
-    width: 100px;
-    border: none;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
     position: fixed;
     bottom: 15px;
     right: 10px;
+    background-color: #784c92;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-size: 20px;
     cursor: pointer;
+    margin-left: 5px;
+    margin-right: 5px;
     z-index: 1;
 }
 

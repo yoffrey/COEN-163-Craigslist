@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './Messages.css'
 
-const Messages = ({setShowMessages}) => {
+function Messages() {
     const [messageInput, setMessageInput] = useState("Enter message...");
     const unhide = () => {
       setMessageInput("Enter message...");
@@ -23,8 +23,6 @@ const Messages = ({setShowMessages}) => {
       }
       //all messages
       const closeForm1 = () => {
-        setShowMessages(false);
-
         document.getElementById("myForm0").style.display = "none";
       }
 
